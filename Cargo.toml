@@ -19,16 +19,16 @@ default = []
 ci = ["skeptic"]
 
 [target.'cfg(unix)'.dependencies]
-linux_proc = "0.1"
+linux_proc = "0.1.1"
 
 [target.'cfg(windows)'.dependencies.winapi]
-version = "0.3"
+version = "0.3.9"
 features = ["processthreadsapi", "minwindef"]
 
 [build-dependencies.skeptic]
-version = "0.13"
+version = "0.13.7"
 optional = true
 
 [dev-dependencies]
-skeptic = "0.13"
+skeptic = "0.13.7"
 
